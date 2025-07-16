@@ -1,15 +1,44 @@
 {
-  "chain_name": "empe",
-  "status": "live",
-  "network_type": "mainnet",
-  "pretty_name": "Empe Network",
-  "chain_id": "empe-1",
-  "bech32_prefix": "empe",
-  "rpc": [
-    { "provider": "empe", "address": "https://rpc.empe.io" }
-  ],
-  "api": [
-    "https://api.empe.io"
-  ],
-  "logo": "https://raw.githubusercontent.com/empe-network/assets/main/logos/empe.png"
+  "chain_name": "empe",
+  "status": "live",
+  "network_type": "mainnet",
+  "pretty_name": "Empe Blockchain",
+  "chain_id": "empe-1",
+  "bech32_prefix": "empe",
+  "daemon_name": "emped",
+  "node_home": ".emped",
+  "key_algos": ["secp256k1"],
+  "slip44": 118,
+  "logo": "https://raw.githubusercontent.com/empe-io/assets/main/logo/empe-logo.svg",
+  "rpc": [
+    {
+      "provider": "empe.io",
+      "address": "https://rpc.empe.io"
+    }
+  ],
+  "api": [
+    {
+      "provider": "empe.io",
+      "address": "https://lcd.empe.io"
+    }
+  ],
+  "explorers": [
+    {
+      "name": "Empe Explorer",
+      "url": "https://hub.empe.io",
+      "standard": "ping.pub"
+    }
+  ],
+  "sdk_version": "0.47.5",
+  "min_tx_fee": "5000",
+  "addr_prefix": "empe",
+  "assets": [
+    {
+      "base": "uempe",
+      "symbol": "EMPE",
+      "exponent": 6,
+      "coingecko_id": "empe",
+      "logo": "https://raw.githubusercontent.com/empe-io/assets/main/logo/empe-token.svg"
+    }
+  ]
 }
