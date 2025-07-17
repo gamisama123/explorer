@@ -3,60 +3,30 @@
   "status": "live",
   "network_type": "testnet",
   "pretty_name": "Empeiria Testnet",
-  "chain_id": "empeiria-1",
+  "chain_id": "empe-testnet-2",
   "bech32_prefix": "empe",
   "logo": "https://raw.githubusercontent.com/empe-io/assets/main/logo/empe-logo.svg",
   "rpc": [
-    {
-      "provider": "mictonode.com",
-      "address": "https://empe-testnet-rpc.mictonode.com"
-    },
-    {
-      "provider": "validator247.com",
-      "address": "https://empeiria-testnet-rpc.validator247.com"
-    },
-    {
-      "provider": "nodevism.com",
-      "address": "https://rpc.empeiria-t.nodevism.com"
-    }
+    { "provider": "mictonode", "address": "https://empe-testnet-rpc.mictonode.com" },
+    { "provider": "validator247", "address": "https://empeiria-testnet-rpc.validator247.com" },
+    { "provider": "bonynode", "address": "https://empeiria-testnet-rpc.bonynode.online" }
   ],
   "rpc_wss": [
-    {
-      "provider": "mictonode.com",
-      "address": "wss://empe-testnet-rpc.mictonode.com/websocket"
-    }
+    { "provider": "mictonode", "address": "wss://empe-testnet-rpc.mictonode.com/websocket" }
   ],
   "api": [
-    {
-      "provider": "mictonode.com",
-      "address": "https://empe-testnet-api.mictonode.com"
-    },
-    {
-      "provider": "validator247.com",
-      "address": "https://empeiria-testnet-api.validator247.com"
-    },
-    {
-      "provider": "nodevism.com",
-      "address": "https://api.empeiria-t.nodevism.com"
-    }
+    { "provider": "mictonode", "address": "https://empe-testnet-api.mictonode.com" },
+    { "provider": "validator247", "address": "https://empeiria-testnet-api.validator247.com" },
+    { "provider": "bonynode", "address": "https://empeiria-testnet-api.bonynode.online" }
   ],
   "grpc": [
-    {
-      "provider": "mictonode.com",
-      "address": "empe-testnet-grpc.mictonode.com:11190"
-    }
-  ],
-  "evm_rpc": [
-    {
-      "provider": "mictonode.com",
-      "address": "https://empe-testnet-evmrpc.mictonode.com"
-    }
+    { "provider": "mictonode", "address": "empe-testnet-grpc.mictonode.com:11190" },
+    { "provider": "bonynode", "address": "empeiria-testnet-grpc.bonynode.online:443" }
   ],
   "explorers": [
-    {
-      "name": "Empeiria Explorer",
-      "url": "https://hub.empe.io",
-      "standard": "ping.pub"
-    }
+    { "name": "Empeiria Explorer", "url": "https://hub.empe.io", "standard": "ping.pub" }
+  ],
+  "peers": [
+    { "provider": "bonynode", "address": "@empeiria-testnet-peer.bonynode.online" }
   ]
 }
