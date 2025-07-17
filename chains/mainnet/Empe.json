@@ -1,44 +1,21 @@
 {
-  "chain_name": "empe",
+  "chain_name": "empeiria",
   "status": "live",
-  "network_type": "mainnet",
-  "pretty_name": "Empe Blockchain",
-  "chain_id": "empe-1",
+  "network_type": "testnet",
+  "pretty_name": "Empeiria Testnet",
+  "chain_id": "empe-testnet-2",
   "bech32_prefix": "empe",
-  "daemon_name": "emped",
-  "node_home": ".emped",
-  "key_algos": ["secp256k1"],
-  "slip44": 118,
   "logo": "https://raw.githubusercontent.com/empe-io/assets/main/logo/empe-logo.svg",
   "rpc": [
     {
-      "provider": "empe.io",
-      "address": "https://rpc.empe.io"
+      "provider": "nodevism.com",
+      "address": "https://rpc.empeiria-t.nodevism.com"
     }
   ],
   "api": [
     {
-      "provider": "empe.io",
-      "address": "https://lcd.empe.io"
-    }
-  ],
-  "explorers": [
-    {
-      "name": "Empe Explorer",
-      "url": "https://hub.empe.io",
-      "standard": "ping.pub"
-    }
-  ],
-  "sdk_version": "0.47.5",
-  "min_tx_fee": "5000",
-  "addr_prefix": "empe",
-  "assets": [
-    {
-      "base": "uempe",
-      "symbol": "EMPE",
-      "exponent": 6,
-      "coingecko_id": "empe",
-      "logo": "https://raw.githubusercontent.com/empe-io/assets/main/logo/empe-token.svg"
+      "provider": "nodevism.com",
+      "address": "https://api.empeiria-t.nodevism.com"
     }
   ]
 }
