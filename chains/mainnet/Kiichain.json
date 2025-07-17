@@ -21,5 +21,8 @@
     "https://json-rpc.uno.sentry.testnet.v3.kiivalidator.com/",
     "https://json-rpc.dos.sentry.testnet.v3.kiivalidator.com/"
   ],
-  "logo": "https://github.com/KiiChain/kiichain/blob/239012d2d19a662ddf141f46a05e81aac86ce5ce/assets/kii.png"
-}
+  "logo":"https://github.com/KiiChain/kiichain/blob/239012d2d19a662ddf141f46a05e81aac86ce5ce/assets/kii.png"
+};
+
+const logoURL = data.logo.replace("github.com", "raw.githubusercontent.com").replace("/blob/", "/");
+document.querySelector("#kiichain-logo").src = logoURL;
